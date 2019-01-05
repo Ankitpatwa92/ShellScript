@@ -10,15 +10,16 @@ age=5
 ```my_array= ("1" "2" "3" "yes" "no")```
 
 #### if else condition in shell script
+
+###### simple if
 ```
-##### simple if
 if [ $age == "5" ]
 then
    echo yes he is eligible
 fi
-
-##### if with else
-
+```
+###### if with else
+```
 if [ $age == "5" ]
 then
    echo "Yes, He is eligible"
@@ -60,9 +61,9 @@ drakula=amit
 
 folderName=drakula
 
-echo $folderName   output  drakula
+echo $folderName   //output  drakula
 
-echo ${!folderName}   output amit
+echo ${!folderName}   //output amit
 ```
 #### Check for empty or undefined
 ```
