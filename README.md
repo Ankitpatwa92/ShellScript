@@ -6,6 +6,11 @@ Basic Syntax and commands
 syntax:  varName=value
 age=5
 ```
+#### How to take input in shell script
+```
+read myVar
+```
+
 #### Declare array in shell script
 ```my_array= ("1" "2" "3" "yes" "no")```
 
@@ -78,3 +83,30 @@ fi
 
 #### Append value in variable result
 ```"${varName} myAppendValue"```
+
+
+#### Curl Command Use
+curl is used to download file
+```
+curl -o myFileName https://abc.com/dockerfile    //file be saved with myFileName
+curl -O https://abc.com/dockerfile    //file be saved with name provied in url
+
+```
+
+#### Read file line by line linux
+The -r option passed to read command prevents backslash escapes from being interpreted.
+```
+while read -r line
+do
+    name=$line
+    echo "Text read from file - $name"
+done < $1
+```
+
+#### Write Shell command in multiple line using backslash
+
+```
+curl -o myfile \
+https://myorg.com/myfile
+```
+
