@@ -2,11 +2,12 @@
 Basic Syntax and commands
 
 #### How to declare variable in shell script
-varName=value
+```
+syntax:  varName=value
 age=5
-
+```
 #### Declare array in shell script
-my_array= ("1" "2" "3" "yes" "no")
+```my_array= ("1" "2" "3" "yes" "no")```
 
 #### if else condition in shell script
 ```
@@ -23,6 +24,7 @@ then
    echo "Yes, He is eligible"
 else 
  echo "No, He is eligible"
+ fi
 ```
 
 #### Get array length
@@ -31,7 +33,7 @@ else
 
 #### iterate over array
 ```
-for (( i=1; i<${arraylength}+1; i++ ));
+for (( i=1; i<${arraylength}+1; i++ ))
 do
 	echo ${myArray[i]}
 done
@@ -42,7 +44,7 @@ done
 
 #### for loop
 ```
-for ( i=1; i<5; i++ )
+for (( i=1; i<5; i++ ))
 do
 	echo i
 done
@@ -66,7 +68,7 @@ echo ${!folderName}   output amit
 ```
 if [ ! -z "$KAFKFA_URL" ]
 then
-  echo "Please assign Kafka Variable"
+  echo "This is kafka url localhost:9092"
 fi  
 ```
 
