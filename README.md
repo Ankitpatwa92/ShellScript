@@ -40,7 +40,7 @@ do
 done
 ```
 
-#### write executable command
+#### Write executable command
 ```eval your_command```
 
 #### for loop
