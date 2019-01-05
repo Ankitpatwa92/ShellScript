@@ -96,11 +96,16 @@ curl -O https://abc.com/dockerfile    //file be saved with name provied in url
 #### Read file line by line linux
 The -r option passed to read command prevents backslash escapes from being interpreted.
 ```
-while read -r line
+fileName=file.txt
+while read line
 do
-    name=$line
-    echo "Text read from file - $name"
-done < $1
+    
+	echo "Line from file $line"
+	echo  "reading first word of line=>   $(echo  "$line" | awk '{print $1}')"
+	echo  "reading second word of line=>  $(echo  "$line" | awk '{print $2}')"
+    
+done<$fileName 
+
 ```
 
 #### Write Shell command in multiple line using backslash
