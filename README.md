@@ -117,7 +117,9 @@ https://myorg.com/myfile
 
 #### Replace Content inside file
 ```
-sed -i.bak 's/string_to_replace/replace_with/g' file.txt
+sed -i.bak 's/string_to_replace/replace_with/' file.txt   //Single Occurance
+sed -i.bak 's/string_to_replace/replace_with/g' file.txt  //All Occurance
+sed -i.bak 's/^string_to_replace/replace_with/g' file.txt  //^ use for exac match  user and username are different 
 
 ```
 
