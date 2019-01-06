@@ -130,4 +130,7 @@ sed '/pattern/a some text here' filename
 
 sed -i.bak '/username/a This is my text' needtodelete.txt
 
+if your file is following symlink
+sed --in-place --follow-symlinks 's/cat/dog/' pet_link
+
 ```
