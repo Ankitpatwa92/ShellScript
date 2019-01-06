@@ -123,3 +123,11 @@ sed -i.bak 's/^string_to_replace/replace_with/g' file.txt  //^ use for exac matc
 
 ```
 
+#### Insert a line after pattern matching
+
+```
+sed '/pattern/a some text here' filename
+
+sed -i.bak '/username/a This is my text' needtodelete.txt
+
+```
