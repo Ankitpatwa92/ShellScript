@@ -115,3 +115,9 @@ curl -o myfile \
 https://myorg.com/myfile
 ```
 
+#### Replace Content inside file
+```
+sed -i.bak 's/string_to_replace/replace_with/g' file.txt
+
+```
+
