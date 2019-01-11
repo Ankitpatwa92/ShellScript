@@ -134,3 +134,11 @@ if your file is following symlink
 sed --in-place --follow-symlinks 's/cat/dog/' pet_link
 
 ```
+
+
+#### Find a file in directory
+```
+
+find ./ -name '*abc.txt'
+
+```
