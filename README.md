@@ -142,3 +142,13 @@ sed --in-place --follow-symlinks 's/cat/dog/' pet_link
 find ./ -name '*abc.txt'
 
 ```
+
+
+#### How to get grep output and perform some operation
+```
+cmd1  $(cmd2 | grep Evicted | awk '{print $1}' | tr '\n' ' ')
+
+//cm1 command to execute
+//cm2 actual command 
+// grep will grep output of cm2
+```
