@@ -152,3 +152,10 @@ cmd1  $(cmd2 | grep Evicted | awk '{print $1}' | tr '\n' ' ')
 //cm2 actual command 
 // grep will grep output of cm2
 ```
+
+
+#### Multiline comment in linux
+```
+:'
+'
+```
