@@ -53,3 +53,8 @@ unzip fileName.zip
 unzip fileName.zip -d /home/myfolder  
 
 ```
+
+### Add file in existing zip file
+```
+zip -0 -rv myold.zip file1 file2
+```
