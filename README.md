@@ -159,3 +159,8 @@ cmd1  $(cmd2 | grep Evicted | awk '{print $1}' | tr '\n' ' ')
 :'
 '
 ```
+
+#### Command to print port service is listning on particular port
+```
+ss -tulpn
+```
