@@ -164,3 +164,8 @@ cmd1  $(cmd2 | grep Evicted | awk '{print $1}' | tr '\n' ' ')
 ```
 ss -tulpn
 ```
+
+#### Clear running applicaiton log in linux
+```
+:> log_file
+```
